@@ -1,0 +1,35 @@
+WEEK 10 — quiz and concept notes
+
+Quiz answers
+1 D
+2 B
+3 B
+4 D
+5 C
+6 A
+7 B
+8 A
+9 C
+10 B
+11 B
+12 B
+13 A
+14 A
+15 B
+16 A
+17 B
+18 C
+19 C
+20 C
+
+Concept notes
+1. Strings cannot be modified after creation. Repeated concatenation creates temporary strings; StringBuilder is more efficient for many edits.
+2. `this.field = field` refers to the current object's member on the left and the constructor parameter on the right.
+3. An object stores state; a reference variable points to it. Assigning one reference to another copies the reference, so both can access the same object.
+4. Static state is shared, such as a class-wide object count. Instance state is unique per object, such as a student's name.
+5. A for loop suits a known number of repetitions; while suits repetition until a condition changes; do-while suits an operation that must run at least once.
+6. Java passes every argument by value. A primitive value is copied; for an object, the reference value is copied, so a method can mutate the referenced object but cannot reassign the caller's variable.
+7. Integer division discards the fractional part. Cast one operand to double before division, such as `(double) total / count`.
+8. Encapsulation hides fields and exposes controlled methods. Private fields plus validating operations/getters protect invariants; setters are optional, not required.
+9. `==` compares object identity; `equals()` compares logical value when the class implements it. Overriding equals() can make distinct objects with equal fields compare as equal.
+10. Overloading uses the same method name with different parameter lists and is resolved at compile time. Overriding supplies a subclass implementation of the same signature and is dispatched at runtime.
