@@ -1,0 +1,20 @@
+WEEK 9 — quiz and concept notes
+
+Quiz answers
+1 C
+2 C
+3 B
+4 C
+5 C
+6 C
+7 D
+8 C
+9 D
+10 B
+
+Concept notes
+1. Abstraction presents useful operations while hiding their implementation. A coffee machine exposes drink choices and buttons while hiding heating and pumping steps.
+2. Abstraction describes what an object offers; encapsulation protects how its state is stored and changed. A class can expose a simple operation while keeping fields private and validating updates.
+3. An abstract-class constructor initializes shared fields. It runs as part of constructing a concrete subclass object, before the subclass constructor body finishes.
+4. An abstract method must be overridable: private methods are invisible to subclasses, static methods belong to the class, and final methods cannot be overridden.
+5. The diamond problem is ambiguity when a type inherits the same implementation/state through multiple paths. Java allows one superclass; interfaces define contracts and require conflicts between default methods to be resolved explicitly.
