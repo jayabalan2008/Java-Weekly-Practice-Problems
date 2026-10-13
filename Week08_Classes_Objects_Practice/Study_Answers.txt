@@ -1,0 +1,25 @@
+WEEK 8 — quiz and concept notes
+
+Quiz answers
+1 C
+2 A, B, C
+3 C
+4 C
+5 A, C, D
+6 A, C
+7 C
+8 A
+9 A, C
+10 A, B, C
+
+Concept notes
+1. Inheritance lets a specialized class reuse fields and methods from a base class, then override or add behavior. For example, salaried and hourly employees can share name/ID data while calculating pay differently.
+2. “Is-a” means every instance of the derived type can correctly be treated as an instance of the base type. A genuine relationship preserves substitutability and makes shared processing sensible.
+3. Overriding replaces an inherited instance method implementation in a subclass. SalariedEmployee and HourlyEmployee can override calculatePay() using different rules.
+4. Runtime polymorphism selects the overridden method according to the actual object's class when the call runs, even when the variable has a base-class type.
+5. A polymorphic collection stores different subclass objects through one base type. A loop can call the common method on each, and dynamic dispatch selects the right behavior.
+6. Polymorphism keeps type-specific behavior inside the type that owns it. Repeated switches duplicate type knowledge and must be edited whenever a type is added.
+7. Add a new subclass that implements the base contract; existing code that processes base references can continue unchanged. For example, add WalletPayment with its own fee calculation.
+8. Inherited behavior is reused as-is; overridden behavior replaces a base method with a specialized version. A common ID formatter may be inherited, while calculatePay() is overridden.
+9. Inheritance without a true is-a relationship creates tight coupling and misleading APIs. Composition is usually better when one object merely uses another.
+10. CarRental and TruckRental can share common rental details and operations in Rental; specialized methods such as truck capacity belong to TruckRental.
